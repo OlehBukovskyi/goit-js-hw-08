@@ -1,0 +1,36 @@
+/* .gallery {
+
+}
+.gallery-item {
+
+}
+
+.gallery-link {
+   
+}
+.gallery-image{
+    width: 360px;
+    height: 300px;
+}   
+
+ */
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 48px;
+  
+  };
+  .gallery-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 48px;
+  };
+  .gallery-link {
+    width: 360px;
+  };
+  .gallery-image {
+    width: 360px;
+    height: 300px;
+    
+  };
+  
+  
