@@ -1,3 +1,6 @@
+
+
+
 const images = [
     {
       preview:
@@ -82,5 +85,23 @@ const images = [
   }
  
 
+  
 createGallery();
+
+function onGalleryClick(event) {
+  event.preventDefault();
+  const target = event.target;
+  if (target.classList.contains('gallery-image')) {
+    const largeImageURL = target.dataset.source;
+    console.log(largeImageURL);
+    const instance = basicLightbox.create(`
+    <img src="${largeImageURL}" width="800" height="600">
+  `);
+
+  instance.show();
+}
+  }
+
+
+gallery.addEventListener('click', onGalleryClick);
 
